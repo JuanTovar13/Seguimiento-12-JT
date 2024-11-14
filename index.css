@@ -1,23 +1,109 @@
 body {
-
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(8, 67, 116);
     
 }
 
 .app {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(0, 179, 211);
+    border-radius: 8px;
 }
 
-.search-icon{
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:darkturquoise;
+    border-radius: 8px;
+}
+
+.addContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-title {
+    font-size: 24px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
     
 }
 
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#contact-form input {
+    width: 96%;
+    padding: 10px;
+    margin: 5px 0;
+    
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #478fee;
+    
+    border-radius: 4px;
+}
+
+#contact-form button:hover {
+    background-color: #0f199e;
+    color: white;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-actions button {
+    margin-left: 10px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
